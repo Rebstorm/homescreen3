@@ -7,6 +7,15 @@ div#app-main{
     height: 100vh;
 }
 
+div#splash-screen{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: #ccc2c2;
+}
+
 div.main-bg{
     background-color:#ece9e9;
 }
