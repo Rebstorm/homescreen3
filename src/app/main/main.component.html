@@ -1,4 +1,11 @@
 <div id="app-main" class="col-md-12 main-bg">
     <app-splashscreen id="app-splash-screen"></app-splashscreen>
+    <div id="menu">
+        <div *ngFor="let app of apps">
+            <div class="app-badge" (click)="setApp(app)">
+                <div>{{app.name}}</div>
+            </div>
+        </div>
+    </div>
 </div>
 

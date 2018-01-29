@@ -6,7 +6,6 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./splashscreen.component.css']
 })
 export class SplashscreenComponent implements OnInit {
-  splashScreen; 
 
   constructor() { }
 
