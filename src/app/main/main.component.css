@@ -5,6 +5,7 @@
 div#app-main{
     width: 100%;
     height: 100vh;
+    overflow-y: hidden;
 }
 
 div#splash-screen{
@@ -14,6 +15,7 @@ div#splash-screen{
     width: 100%;
     height: 100vh;
     background: #ccc2c2;
+    overflow-y: hidden;
 }
 
 div.main-bg{
@@ -24,19 +26,51 @@ div#menu {
     height: inherit;
     display: block;
     margin: 0 auto;
+    background-color: #f5efef;
+}
+
+div#weather-container{
+    vertical-align: top;
+    height: inherit;
+    padding: 2em 0 0 0;
+    display: inline-block;
+    text-align: center;
+}
+
+div.app-container {
+    vertical-align: top;
+    height: inherit;
+    display: inline-block;
 }
 
 div.app-badge{
-    margin: 2em;
-    padding: 2em;
+    margin-top: 2em;
     display: inline-block;
     box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
     transition: all 0.3s cubic-bezier(.25,.8,.25,1); 
-    border-radius: 1em;
-    background-color: antiquewhite;
+    border-radius: 0.1em;
 }
 
 div.app-badge:hover{
     cursor: pointer;
     box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+div.vertical-divider {
+    margin-left: 1%; 
+    margin-right: 1%;
+	background: #DDDDDD;
+	content: ' ';
+    display: inline-block;
+    width: 1px;
+    height: inherit;
+}
+
+
+span.weather-icon{
+    font-size: 10em;
+}
+
+div.weather-icon-temperature{
+    font-size: 5em;
 }

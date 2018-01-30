@@ -1,9 +1,23 @@
-<div id="app-main" class="col-md-12 main-bg">
+<div id="app-main" class="col-12 main-bg">
     <app-splashscreen id="app-splash-screen"></app-splashscreen>
-    <div id="menu">
-        <div *ngFor="let app of apps">
-            <div class="app-badge" (click)="setApp(app)">
-                <div>{{app.name}}</div>
+    <div class="" id="menu">
+        <div class="col-3 col-xs-3" id="weather-container">
+            <span class="weather-sun weather-icon"></span>
+            <div class="weather-icon-temperature">10 <span class="weather-celsius"></span></div>
+        </div>
+        
+        <div class="vertical-divider"></div>
+
+        <div class="app-container col-7 col-xs-9">
+            <div class="" *ngFor="let app of apps">
+                    <div class="app-badge card" style="width: 12rem;">
+                        <img class="card-img-top" src="..." alt="Card image cap">
+                        <div class="card-block">
+                            <h4 class="card-title">Card title</h4>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" (click)="setApp(app)" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
             </div>
         </div>
     </div>

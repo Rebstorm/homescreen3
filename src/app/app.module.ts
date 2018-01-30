@@ -23,7 +23,7 @@ const appRoutes: Routes = [
     WeatherComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
     RouterModule.forRoot(
       appRoutes,
       //{ enableTracing: true } // Logs all internal evens - should just be for testing. 
