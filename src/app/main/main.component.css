@@ -1,21 +1,20 @@
 :root {
     --main-background: #ccc2c2;
-} 
-
+}
 div#app-main{
     width: 100%;
     height: 100vh;
     overflow-y: hidden;
 }
 
-div#splash-screen{
+#app-splash-screen{
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100vh;
     background: #ccc2c2;
-    overflow-y: hidden;
+    z-index: 2;
 }
 
 div.main-bg{
@@ -31,16 +30,15 @@ div#menu {
 
 div#weather-container{
     vertical-align: top;
-    height: inherit;
-    padding: 2em 0 0 0;
     display: inline-block;
     text-align: center;
 }
 
 div.app-container {
     vertical-align: top;
-    height: inherit;
-    display: inline-block;
+    text-align: center;
+    overflow-y: auto;
+    height: 100vh;
 }
 
 div.app-badge{
@@ -64,6 +62,12 @@ div.vertical-divider {
     display: inline-block;
     width: 1px;
     height: inherit;
+}
+
+div.display-inline{
+    display: inline;
+    overflow-x: scroll;
+    overflow-y:hidden;
 }
 
 

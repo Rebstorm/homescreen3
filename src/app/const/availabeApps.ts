@@ -5,5 +5,14 @@ import { Directive } from '@angular/core'
 export const APPSAVAILABLE : App[] = [
     { component : WeatherComponent,
       name : "weather" 
+    },
+    { component : WeatherComponent,
+      name : "weather" 
+    },
+    { component : WeatherComponent,
+      name : "weather" 
+    },
+    { component : WeatherComponent,
+      name : "weather" 
     }
 ];

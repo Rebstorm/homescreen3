@@ -3,6 +3,8 @@ import { APPSAVAILABLE } from '../const/availabeApps'
 import { App } from '../types/app';
 
 
+
+
 @Component({
   selector: 'app-main',
   templateUrl: './main.component.html',
@@ -17,7 +19,7 @@ export class MainComponent implements OnInit {
   constructor() { }
 
   ngAfterContentInit(){
-    console.log("dom loaded");
+    
   }
 
   ngOnInit() {

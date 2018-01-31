@@ -3,12 +3,12 @@ img.splash-screen {
     margin: 0 auto;
     width: 100vh;
     display:block;
+    width: 50%;
 }
 
 img.fade-in-out {
     animation: fade-in-out-splashscreen 2s cubic-bezier(1,0,0,1) 1;
 }
-
 
 
 

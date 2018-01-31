@@ -3,9 +3,11 @@
 /* Bootstrap */
 @import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 
+
 body {
     margin: 0;
 }
+
 
 @font-face {
     font-family: 'weather-iconic';
@@ -222,3 +224,5 @@ body {
   .weather-windsock:before {
     content: "\e93e";
   }
+
+  /* THIS IS THE SCROLL-EFFECT */
