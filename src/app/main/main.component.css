@@ -13,22 +13,23 @@ div#app-main{
     left: 0;
     width: 100%;
     height: 100vh;
-    background: #ccc2c2;
+    background: #c8d6e5;
     z-index: 2;
 }
 
 div.main-bg{
-    background-color:#ece9e9;
+    background-color:#c8d6e5;
 }
 
 div#menu {
     height: inherit;
     display: block;
     margin: 0 auto;
-    background-color: #f5efef;
+    background:transparent;
 }
 
 div#weather-container{
+    margin-top: 2em;
     vertical-align: top;
     display: inline-block;
     text-align: center;
@@ -71,10 +72,10 @@ div.display-inline{
 }
 
 
-span.weather-icon{
-    font-size: 10em;
+h1.weather-icon{
+    font-size: 3em;
 }
 
 div.weather-icon-temperature{
-    font-size: 5em;
+    font-size: 3em;
 }

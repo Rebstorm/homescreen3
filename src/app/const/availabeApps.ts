@@ -4,10 +4,12 @@ import { Directive } from '@angular/core'
 
 export const APPSAVAILABLE : App[] = [
     { component : WeatherComponent,
-      name : "weather" 
+      name : "weather",
+      url: "../assets/images/park.svg",
+      description: "hello world"
     },
     { component : WeatherComponent,
-      name : "weather" 
+      name : "hue Lights" 
     },
     { component : WeatherComponent,
       name : "weather" 

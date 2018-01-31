@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import {HttpClientModule} from '@angular/common/http';
 
 
 
@@ -28,6 +29,7 @@ const appRoutes: Routes = [
       appRoutes,
       //{ enableTracing: true } // Logs all internal evens - should just be for testing. 
     ),
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent],

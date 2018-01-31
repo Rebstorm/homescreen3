@@ -5,6 +5,7 @@ import { App } from '../types/app';
 
 
 
+
 @Component({
   selector: 'app-main',
   templateUrl: './main.component.html',

@@ -1,26 +1,23 @@
 <div id="app-main" class="container-fluid main-bg">
     <app-splashscreen id="app-splash-screen"></app-splashscreen>
     <div class="row" id="menu">
-        <div class="col-sm-4" id="weather-container">
-            <span class="weather-sun weather-icon"></span>
-            <div class="weather-icon-temperature">10 <span class="weather-celsius"></span></div>
+        <div class="jumbotron col-sm-4" id="weather-container">
+            <h1 class="display-3">
+                <span class="weather-sun weather-icon"></span>
+            </h1>
+            <p class="lead">10 <span class="weather-celsius"></span> </p>
         </div>
         
         <div class="app-container col-sm-8 float-right">
             <div class="display-inline" *ngFor="let app of apps">
-
-                <!--
                     <div class="app-badge card" style="width: 250px;">
-                        <img class="card-img-top" src="http://via.placeholder.com/250x100" alt="Card image cap">
+                        <img class="card-img-top" src="{{app.url}}" alt="{{app.name}}" style="max-width: 250px; max-height:110px;">
                         <div class="card-block">
-                            <h4 class="card-title">Card title</h4>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <h4 class="card-title">{{app.name}}</h4>
+                            <p class="card-text">{{app.description}}</p>
                             <a href="#" (click)="setApp(app)" class="btn btn-primary">Go somewhere</a>
                         </div>
                     </div>
-
-                -->
-                <div id="trigger1" class="spacer s0"></div>
             </div>
         </div>
     </div>
