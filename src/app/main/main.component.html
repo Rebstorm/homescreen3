@@ -11,11 +11,11 @@
         <div class="app-container col-sm-8 float-right">
             <div class="display-inline" *ngFor="let app of apps">
                     <div class="app-badge card" style="width: 250px;">
-                        <img class="card-img-top" src="{{app.url}}" alt="{{app.name}}" style="max-width: 250px; max-height:110px;">
+                        <img class="card-img-top" src="{{app.imgurl}}" alt="{{app.name}}" style="max-width: 250px; max-height:110px;">
                         <div class="card-block">
                             <h4 class="card-title">{{app.name}}</h4>
                             <p class="card-text">{{app.description}}</p>
-                            <a href="#" (click)="setApp(app)" class="btn btn-primary">Go somewhere</a>
+                            <a routerLink="/{{app.url}}" (click)="setApp(app)" class="btn btn-primary">Go somewhere</a>
                         </div>
                     </div>
             </div>

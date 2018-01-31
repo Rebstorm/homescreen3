@@ -10,10 +10,11 @@ import { AppComponent } from './app.component';
 import { MainComponent } from './main/main.component';
 import { SplashscreenComponent } from './splashscreen/splashscreen.component';
 import { WeatherComponent } from './weather/weather.component';
+import { WeathersettingsComponent } from './weathersettings/weathersettings.component';
 
 
 const appRoutes: Routes = [
-  { path: '**', component: AppComponent }
+  { path: 'weather', component: WeathersettingsComponent}
 ]
 
 @NgModule({
@@ -21,7 +22,8 @@ const appRoutes: Routes = [
     AppComponent,
     MainComponent,
     SplashscreenComponent,
-    WeatherComponent
+    WeatherComponent,
+    WeathersettingsComponent
   ],
   imports: [
     BrowserModule,

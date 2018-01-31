@@ -5,8 +5,9 @@ import { Directive } from '@angular/core'
 export const APPSAVAILABLE : App[] = [
     { component : WeatherComponent,
       name : "weather",
-      url: "../assets/images/park.svg",
-      description: "hello world"
+      url: "/weather",
+      description: "hello world",
+      imgurl: "../assets/images/park.svg";
     },
     { component : WeatherComponent,
       name : "hue Lights" 
