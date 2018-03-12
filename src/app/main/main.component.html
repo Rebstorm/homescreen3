@@ -1,25 +1,28 @@
 <div id="app-main" class="container-fluid main-bg">
     <app-splashscreen id="app-splash-screen"></app-splashscreen>
-    <div class="row" id="menu">
-        <div class="app-badge card col-sm-4" id="weather-container">
+    
+    <div id="weather-container">
+        <div class="app-badge card" >
             <h1 class="display-3">
                 <span class="weather-sun weather-icon"></span>
             </h1>
             <p class="lead">10 <span class="weather-celsius"></span> </p>
         </div>
-        
-        <div class="app-container col-sm-8 float-right">
-            <div class="display-inline" *ngFor="let app of apps">
-                    <div class="app-badge card" style="width: 250px;">
-                        <img class="card-img-top" src="{{app.imgurl}}" alt="{{app.name}}" style="max-width: 250px; max-height:110px;">
-                        <div class="card-block">
-                            <h4 class="card-title">{{app.name}}</h4>
-                            <p class="card-text">{{app.description}}</p>
-                            <a routerLink="/{{app.url}}" (click)="setApp(app)" class="btn btn-primary">Go somewhere</a>
-                        </div>
-                    </div>
-            </div>
-        </div>
     </div>
+    <div id="menu-container" >
+        <div class="app-container">
+            <div class="" *ngFor="let app of apps">
+                <div class="app-badge card" style="width: 250px;">
+                    <img class="card-img-top" src="{{app.imgurl}}" alt="{{app.name}}" style="max-width: 250px; max-height:110px;">
+                    <div class="card-block">
+                        <h4 class="card-title">{{app.name}}</h4>
+                        <p class="card-text">{{app.description}}</p>
+                        <a routerLink="/{{app.url}}" (click)="setApp(app)" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+        </div> 
+    </div>
+    
 </div>
 
